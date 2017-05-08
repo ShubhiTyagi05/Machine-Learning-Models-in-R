@@ -1,0 +1,10 @@
+#cm = table(test_set[89], y_pred)
+cm = table(unlist(test_set[71]), y_pred)
+library(caret)
+matrix = confusionMatrix(cm)
+precision <-matrix$overall['Accuracy']
+
+plot(model)
+
+h2o.varimp(model)
+h2o.varimp_plot(model)
