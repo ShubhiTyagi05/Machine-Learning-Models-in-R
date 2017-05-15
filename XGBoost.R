@@ -107,4 +107,4 @@ mytune$y
 #predict model
  xgpred <- predict(xgmodel,testtask)
  
- onfusionMatrix(xgpred$data$response,xgpred$data$truth)
+ confusionMatrix(xgpred$data$response,xgpred$data$truth)
